@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky  top-0 z-50 bg-[#F8EDE3] shadow-[0_0_50px_0_rgba(0,0,0,0.2)] rounded-lg mx-4 mt-4">
+    <nav className="sticky  top-0 z-50 bg-[#F8EDE3] rounded-lg mx-4 mt-4">
       <div className="max-w-[700px] mx-auto px-5 py-1.5">
         <div className="flex justify-between items-center h-14">
           {/* Logo */}
@@ -19,7 +19,7 @@ const Navbar = () => {
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             <Link 
-              href="#about" 
+              href={"/about"}
               className="text-[#8D493A] hover:text-[#8D493A]/80 transition-colors duration-200 font-medium"
             >
               About
