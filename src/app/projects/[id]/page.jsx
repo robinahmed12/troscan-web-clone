@@ -20,7 +20,7 @@ const ProjectDetails = ({ params }) => {
       .catch((err) => console.error("Failed to load data:", err));
   }, [id]);
 
-  const { features, feature, feat } = project;
+  const { features, feature, feat , feat2 , feat3 } = project;
 
   return (
     <div
@@ -134,6 +134,48 @@ const ProjectDetails = ({ params }) => {
                 alt=""
               />
             </div>
+
+            {project.id === "4" && project.images?.length > 5 && (
+              <div className="mt-10">
+                <h3
+                  className="mt-5 text-2xl lg:text-3xl font-bold mb-4"
+                  style={{ color: "rgb(141, 73, 58)" }}
+                >
+                  {feat2?.title}
+                </h3>
+                <div className="space-y-4 text-gray-600">
+                  <p className="leading-relaxed">{feat2?.paragraph}</p>
+                  <p className="leading-relaxed">{feat2?.para}</p>
+                  <p className="leading-relaxed">{feat2?.paras}</p>
+                </div>
+                <img
+                  className="mt-6 rounded-2xl w-full h-[200px] lg:h-[250px] object-cover shadow-lg transition-transform duration-500 hover:scale-[1.02]"
+                  src={project?.images?.[5]}
+                  alt=""
+                />
+              </div>
+            )}
+
+            {project.id === "4" && project.images?.length > 5 && (
+              <div className="mt-10">
+                <h3
+                  className="mt-5 text-2xl lg:text-3xl font-bold mb-4"
+                  style={{ color: "rgb(141, 73, 58)" }}
+                >
+                  {feat3?.title}
+                </h3>
+                <div className="space-y-4 text-gray-600">
+                  <p className="leading-relaxed">{feat3?.paragraph}</p>
+                  <p className="leading-relaxed">{feat3?.para}</p>
+                  <p className="leading-relaxed">{feat3?.paras}</p>
+                </div>
+                <img
+                  className="mt-6 rounded-2xl w-full h-[200px] lg:h-[250px] object-cover shadow-lg transition-transform duration-500 hover:scale-[1.02]"
+                  src={project?.images?.[6]}
+                  alt=""
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

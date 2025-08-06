@@ -32,60 +32,113 @@
     }
   },
   {
-    "id": "2",
-    "heading": "Modern Elegance in Every Room",
-    "subTitle": "Transform your space with curated furniture",
-    "description": "An all-in-one dashboard for organizers and participants to manage health camps, register, and view analytics.",
-    "images": [
-      "https://i.ibb.co.com/nMzVVGvH/bz-Ax-UIZb76-NAb-Mbb-TCNRKvwep8-1.jpg",
-      "https://framerusercontent.com/images/GSrjxKrMX8DBFJt5nZzzzaVUf5U.jpeg?scale-down-to=1024",
-      "https://framerusercontent.com/images/KIQLPXU74RnFl2Nf7VhECb5WRI.jpeg",
-      "https://framerusercontent.com/images/HLaV86bSgqRvlhFVgY8zT85PIs.jpeg",
-      "https://framerusercontent.com/images/112jWzf8HMheFhMaB4G4ulRIgqg.jpeg"
-    ],
-    "features": {
-      "title": "Custom Room Styling Options",
-      "paragraph-1": "Easily browse curated furniture collections tailored for every room—be it your living area, bedroom, or workspace. Choose from a variety of themes like modern, rustic, or minimalist. Combine pieces that complement each other to create a cohesive look. Our smart suggestions make decorating easier than ever. With intuitive filters and style recommendations, you can visualize your ideal space before making any purchases. The system learns your preferences over time to deliver increasingly personalized suggestions.",
-      "paragraph-2": "Access pre-designed room setups with matching furniture sets that take the guesswork out of decorating. Layout guides help you visualize and place furniture based on your room size and lighting. Get inspired and implement your dream setup with confidence and style. Each layout is created by professional interior designers to ensure optimal flow and functionality. You can mix and match elements from different sets to create your perfect combination.",
-      "paragraph-3": "Mix and match furniture by materials like wood, metal, or fabric with ease. Color coordination tips ensure your furniture blends seamlessly with your walls and decor. Make bold choices or stick to neutrals—either way, it's designed to harmonize. All pieces are chosen to elevate your interior aesthetic. Our color wheel tool helps you experiment with different palettes, while material guides explain the benefits and care requirements of each option."
-    }
+  "id": "2",
+  "heading": "Modern Elegance in Every Room",
+  "subTitle": "Transform your space with curated furniture",
+  "description": "Step into a world of interior sophistication where clean lines and curated collections define your space. 'Modern Elegance in Every Room' is a seamless blend of aesthetics and functionality, offering tailored styling options to elevate any living area with grace and intentionality.",
+  "images": [
+    "https://i.ibb.co.com/nMzVVGvH/bz-Ax-UIZb76-NAb-Mbb-TCNRKvwep8-1.jpg",
+    "https://framerusercontent.com/images/GKyDHX2F6pZYWWDoFPfyzcBaI6w.jpeg",
+    "https://framerusercontent.com/images/xzFrK8RnnKFFvFnsttyDo4BcCE.jpeg",
+    "https://framerusercontent.com/images/5lV6mzMOdmKU8aLtf3NPkSPsk5U.jpeg",
+    "https://framerusercontent.com/images/P3LXEqxoBiLribP56lqpKA504MI.jpeg"
+  ],
+  "features": {
+    "title": "Tailored Styling Across Every Corner",
+    "paragraph": "Easily explore curated room layouts and themed furniture bundles designed by professionals to bring balance and beauty to your interiors. Whether you're refreshing your living room or optimizing your workspace, the options align with modern, rustic, or minimalist aesthetics—letting your space reflect your personality with ease.",
+    "para": "Layout guides and visualization tools remove the guesswork from interior styling. Each suggestion is built on thoughtful room dynamics, from furniture proportions to lighting effects. Users can test arrangements before purchase, ensuring each item fits both form and function within their home environment.",
+    "paras": "Advanced filters and smart suggestions adapt to your taste, recommending textures, tones, and materials that match your evolving style. With intuitive color coordination and flexible mix-and-match options, your journey to creating a cohesive, elegant atmosphere becomes effortless and deeply personal."
   },
-  {
-    "id": "3",
-    "heading": "Serene Urban Retreat",
-    "subTitle": "Modern comfort for city dwellers",
-    "description": "A thoughtfully designed interior experience blending urban living with cozy furniture, elegant decor, and a peaceful environment. Ideal for those seeking calm within the city's buzz.",
-    "images": [
-      "https://i.ibb.co.com/hRb0fvHy/h8r-MLidvtxg-O37bgs0urvb-SKFOk.jpg",
-      "/images/event/2.jpg",
-      "/images/event/3.jpg",
-      "/images/event/4.jpg",
-      "/images/event/5.jpg"
-    ],
-    "features": {
-      "title": "Minimalist Comfort",
-      "paragraph-1": "Each room is curated with sleek, minimalist furniture that doesn't compromise on comfort. From soft-cushioned seating to ergonomic arrangements, the design offers both function and relaxation for modern city life. Whether lounging, working, or entertaining, every corner invites ease. The clean lines and uncluttered spaces promote mental clarity and reduce visual stress. Thoughtful details like hidden storage and convertible pieces maximize utility without sacrificing style.",
-      "paragraph-2": "The space is adorned with calming tones, organic textures, and stylish accents to reflect modern urban tastes. Artful wall pieces, soft lighting, and curated accessories turn every room into a statement of personality. It's sophistication without excess. Natural materials like wood and linen add warmth to the contemporary aesthetic. Each decorative element serves a purpose, contributing to both the visual appeal and the tranquil atmosphere.",
-      "paragraph-3": "Designed with small-space optimization in mind, every area serves a dual purpose without feeling cramped. Multi-functional furniture, hidden storage, and clever layouts make the most of urban square footage, while maintaining a warm and cozy ambiance for everyday living. Wall-mounted elements and vertical storage solutions free up valuable floor space. The intelligent design ensures that compact living never means compromising on comfort or style."
-    }
+  "feature": {
+    "title": "Tailored Styling Across Every Corner",
+    "paragraph": "Easily explore curated room layouts and themed furniture bundles designed by professionals to bring balance and beauty to your interiors. Whether you're refreshing your living room or optimizing your workspace, the options align with modern, rustic, or minimalist aesthetics—letting your space reflect your personality with ease.",
+    "para": "Layout guides and visualization tools remove the guesswork from interior styling. Each suggestion is built on thoughtful room dynamics, from furniture proportions to lighting effects. Users can test arrangements before purchase, ensuring each item fits both form and function within their home environment.",
+    "paras": "Advanced filters and smart suggestions adapt to your taste, recommending textures, tones, and materials that match your evolving style. With intuitive color coordination and flexible mix-and-match options, your journey to creating a cohesive, elegant atmosphere becomes effortless and deeply personal."
   },
-  {
-    "id": "4",
-    "heading": "Luxurious Coastal Living",
-    "subTitle": "Seamless Harmony of Beachside Luxury and Nature",
-    "description": "Discover the epitome of elegance by the sea with our Luxurious Coastal Living project. This design celebrates the beauty of coastal life, blending timeless sophistication with the relaxed charm of seaside living. Every detail has been carefully curated to reflect the tranquility and grandeur of oceanfront spaces, offering a serene escape with a touch of luxury.",
-    "images": [
-      "https://i.ibb.co.com/bjx9HSmp/Akc-INRgd-RJWag-CIMhlf-Aa6-SCpcs.jpg",
-      "/images/portfolio/2.jpg",
-      "/images/portfolio/3.jpg",
-      "/images/portfolio/4.jpg",
-      "/images/portfolio/5.jpg"
-    ],
-    "features-4": {
-      "title": "Ocean-Inspired Design Elements",
-      "paragraph-1": "Our design draws deep inspiration from the natural beauty of the ocean, seamlessly integrating calming colors, textures, and materials reminiscent of the sea. This approach creates a tranquil atmosphere that invites relaxation and evokes a strong connection to the coastal environment. Every corner reflects the soothing rhythm of waves and the freshness of sea breezes, creating a luxurious yet calming experience. The color palette mirrors shifting sands and ocean depths, while textured finishes recall weathered driftwood and smooth sea glass. These natural elements are balanced with refined finishes to achieve perfect harmony.",
-      "paragraph-2": "We emphasize a fluid transition between indoor and outdoor spaces, blurring boundaries to maximize comfort and connection with nature. Expansive glass walls, open-air patios, and lush landscaping work together to bring the outside in. This harmony promotes wellness and offers breathtaking views, allowing residents to enjoy beachside living while immersed in sophisticated interiors designed for ultimate comfort. Retractable walls and covered verandas extend living spaces outdoors in all seasons. The seamless flow encourages an active, nature-connected lifestyle without compromising on luxury.",
-      "paragraph-3": "Maximizing sunlight and fresh sea air is at the core of this project's design philosophy. Large windows, skylights, and strategically placed vents enhance natural lighting and cross-ventilation, reducing reliance on artificial systems. The abundant natural light enriches the warm textures and colors indoors, while fresh airflow maintains a healthy, invigorating environment—perfectly suited for coastal living. Solar orientation is carefully considered to optimize light throughout the day. Automated louvers and shades provide control over light and privacy as needed."
-    }
+  "feat": {
+    "title": "Tailored Styling Across Every Corner",
+    "paragraph": "Easily explore curated room layouts and themed furniture bundles designed by professionals to bring balance and beauty to your interiors. Whether you're refreshing your living room or optimizing your workspace, the options align with modern, rustic, or minimalist aesthetics—letting your space reflect your personality with ease.",
+    "para": "Layout guides and visualization tools remove the guesswork from interior styling. Each suggestion is built on thoughtful room dynamics, from furniture proportions to lighting effects. Users can test arrangements before purchase, ensuring each item fits both form and function within their home environment.",
+    "paras": "Advanced filters and smart suggestions adapt to your taste, recommending textures, tones, and materials that match your evolving style. With intuitive color coordination and flexible mix-and-match options, your journey to creating a cohesive, elegant atmosphere becomes effortless and deeply personal."
   }
+},
+ {
+  "id": "3",
+  "heading": "Serene Urban Retreat",
+  "subTitle": "Modern comfort for city dwellers",
+  "description": "A thoughtfully designed interior experience blending urban living with cozy furniture, elegant decor, and a peaceful environment. Ideal for those seeking calm within the city's buzz.",
+  "images": [
+    "https://i.ibb.co.com/hRb0fvHy/h8r-MLidvtxg-O37bgs0urvb-SKFOk.jpg",
+    "https://framerusercontent.com/images/NKY0VF85VgCCJoBDNF1LGejlzg.jpeg",
+    "https://framerusercontent.com/images/NA41gMalWhF3vqyMsSkal9HrE.jpeg",
+    "https://framerusercontent.com/images/Gxs3dx1Yuws4j6kGfWwPG2KkZcQ.jpeg",
+    "https://framerusercontent.com/images/hTvF9E2NKhEVRq3pHxxOH9VOYxk.jpeg"
+  ],
+  "features": {
+    "title": "Minimalist Comfort with Thoughtful Details",
+    "paragraph": "Each room is curated with sleek, minimalist furniture that balances comfort and style, perfect for the modern city lifestyle. From ergonomic seating to multi-functional pieces, every element invites relaxation without clutter, promoting mental clarity and ease.",
+    "para": "Calming tones and natural materials like wood and linen create a warm ambiance that complements urban sophistication. Carefully selected art, soft lighting, and subtle decor transform the space into a serene urban retreat reflecting personal style.",
+    "paras": "Optimized for compact living, the design incorporates smart storage solutions and versatile layouts that maximize space without sacrificing coziness. Vertical storage, hidden compartments, and convertible furniture make this retreat functional and welcoming, even in small city homes."
+  },
+  "feature": {
+    "title": "Minimalist Comfort with Thoughtful Details",
+    "paragraph": "Each room is curated with sleek, minimalist furniture that balances comfort and style, perfect for the modern city lifestyle. From ergonomic seating to multi-functional pieces, every element invites relaxation without clutter, promoting mental clarity and ease.",
+    "para": "Calming tones and natural materials like wood and linen create a warm ambiance that complements urban sophistication. Carefully selected art, soft lighting, and subtle decor transform the space into a serene urban retreat reflecting personal style.",
+    "paras": "Optimized for compact living, the design incorporates smart storage solutions and versatile layouts that maximize space without sacrificing coziness. Vertical storage, hidden compartments, and convertible furniture make this retreat functional and welcoming, even in small city homes."
+  },
+  "feat": {
+    "title": "Minimalist Comfort with Thoughtful Details",
+    "paragraph": "Each room is curated with sleek, minimalist furniture that balances comfort and style, perfect for the modern city lifestyle. From ergonomic seating to multi-functional pieces, every element invites relaxation without clutter, promoting mental clarity and ease.",
+    "para": "Calming tones and natural materials like wood and linen create a warm ambiance that complements urban sophistication. Carefully selected art, soft lighting, and subtle decor transform the space into a serene urban retreat reflecting personal style.",
+    "paras": "Optimized for compact living, the design incorporates smart storage solutions and versatile layouts that maximize space without sacrificing coziness. Vertical storage, hidden compartments, and convertible furniture make this retreat functional and welcoming, even in small city homes."
+  }
+}
+,
+ {
+  "id": "4",
+  "heading": "Luxurious Coastal Living",
+  "subTitle": "Seamless Harmony of Beachside Luxury and Nature",
+  "description": "Discover the epitome of elegance by the sea with our Luxurious Coastal Living project. This design celebrates the beauty of coastal life, blending timeless sophistication with the relaxed charm of seaside living. Every detail has been carefully curated to reflect the tranquility and grandeur of oceanfront spaces, offering a serene escape with a touch of luxury.",
+  "images": [
+    "https://i.ibb.co.com/bjx9HSmp/Akc-INRgd-RJWag-CIMhlf-Aa6-SCpcs.jpg",
+    "https://framerusercontent.com/images/HDhgrpbN2WpwbAfQYloiuCj5QZQ.jpeg",
+    "https://framerusercontent.com/images/Sx7dGXWA372tpuxMmm4gwBSns.jpeg",
+    "https://framerusercontent.com/images/cC4MFpiuMcwcktvfSwgxXbIE.jpeg",
+    "https://framerusercontent.com/images/hvyQyKHzLyrZFvBDYD4IxzTdM.jpeg",
+    "https://framerusercontent.com/images/aMkBMVo2RJK8hLz8xRWX671eho4.jpeg",
+    "https://framerusercontent.com/images/Sebe6r0ZgyGyjyVUh0iD186ugs.jpeg"
+  ],
+  "features": {
+    "title": "Ocean-Inspired Design Elements",
+    "paragraph": "Our design draws deep inspiration from the ocean’s natural beauty, integrating calming colors, textures, and materials that evoke the sea’s tranquility. The palette mirrors shifting sands and ocean depths, while textured finishes recall driftwood and sea glass, creating a luxurious and soothing coastal ambiance.",
+    "para": "A seamless indoor-outdoor flow is achieved through expansive glass walls, open-air patios, and lush landscaping, maximizing comfort and nature connection. Retractable walls and covered verandas extend living spaces outdoors year-round, inviting residents to embrace beachside living with sophisticated interiors.",
+    "paras": "Maximizing sunlight and fresh sea air is central to the design, with large windows, skylights, and vents enhancing natural light and ventilation. Thoughtful solar orientation and automated louvers provide control over light and privacy, fostering a healthy, invigorating environment ideal for luxurious coastal living."
+  },
+  "feature": {
+    "title": "Sustainable and Eco-Friendly Materials",
+    "paragraph": "This project prioritizes sustainability by incorporating eco-friendly materials that minimize environmental impact without sacrificing luxury. Reclaimed wood, low-VOC paints, and energy-efficient fixtures harmonize beauty and responsibility.",
+    "para": "Natural fiber textiles and recycled glass accents add texture and character while reducing waste. The thoughtful selection of materials supports a healthier indoor environment and contributes to a reduced carbon footprint.",
+    "paras": "Solar panels and rainwater harvesting systems are seamlessly integrated, promoting self-sufficiency and resource conservation. Together, these elements create a home that’s as gentle on the planet as it is stunning to live in."
+  },
+  "feat": {
+    "title": "Ocean-Inspired Design Elements",
+    "paragraph": "Our design draws deep inspiration from the ocean’s natural beauty, integrating calming colors, textures, and materials that evoke the sea’s tranquility. The palette mirrors shifting sands and ocean depths, while textured finishes recall driftwood and sea glass, creating a luxurious and soothing coastal ambiance.",
+    "para": "A seamless indoor-outdoor flow is achieved through expansive glass walls, open-air patios, and lush landscaping, maximizing comfort and nature connection. Retractable walls and covered verandas extend living spaces outdoors year-round, inviting residents to embrace beachside living with sophisticated interiors.",
+    "paras": "Maximizing sunlight and fresh sea air is central to the design, with large windows, skylights, and vents enhancing natural light and ventilation. Thoughtful solar orientation and automated louvers provide control over light and privacy, fostering a healthy, invigorating environment ideal for luxurious coastal living."
+  },
+  "feat2": {
+    "title": "Smart Home Integration",
+    "paragraph": "The residence features advanced smart home technology to enhance comfort and convenience. Automated lighting, climate control, and security systems are seamlessly integrated for effortless management.",
+    "para": "Voice-activated assistants and remote control applications allow residents to customize their environment with ease, from anywhere. Energy-saving modes intelligently reduce consumption while maintaining optimal living conditions.",
+    "paras": "This technology not only boosts lifestyle quality but also contributes to sustainability by optimizing resource use and enabling proactive maintenance alerts."
+  },
+  "feat3": {
+    "title": "Wellness-Focused Amenities",
+    "paragraph": "Designed with wellbeing in mind, the project includes spa-inspired bathrooms, yoga spaces, and meditation gardens that promote relaxation and rejuvenation.",
+    "para": "Natural ventilation, biophilic design elements, and noise-reducing materials create a peaceful sanctuary away from the urban hustle. Light-filled spaces encourage mindfulness and balance.",
+    "paras": "These thoughtful amenities support a holistic lifestyle, nurturing both physical and mental health in a luxurious coastal setting."
+  }
+}
+
+
 ]
