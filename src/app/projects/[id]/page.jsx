@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/app/components/ui/Container";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const ProjectDetails = ({ params }) => {
@@ -8,19 +9,30 @@ const ProjectDetails = ({ params }) => {
   console.log(id);
 
   const [project, setProject] = useState([]);
-  console.log(project);
+  const [allProjects, setAllProjects] = useState([]);
+  const [nextProject, setNextProject] = useState(null);
+  const [followingProject, setFollowingProject] = useState(null);
 
   React.useEffect(() => {
+    // Load all projects
     fetch("/project.json")
       .then((res) => res.json())
       .then((data) => {
+        setAllProjects(data);
         const matched = data.find((item) => item.id === id);
         setProject(matched);
+
+        // Find next project
+        const currentIndex = data.findIndex((item) => item.id === id);
+        const nextIndex = (currentIndex + 1) % data.length;
+        const followingIndex = (currentIndex + 2) % data.length;
+        setFollowingProject(data[followingIndex]);
+        setNextProject(data[nextIndex]);
       })
       .catch((err) => console.error("Failed to load data:", err));
   }, [id]);
 
-  const { features, feature, feat , feat2 , feat3 } = project;
+  const { features, feature, feat, feat2, feat3 } = project;
 
   return (
     <div
@@ -178,6 +190,73 @@ const ProjectDetails = ({ params }) => {
             )}
           </div>
         </div>
+      </div>
+
+      <div className="max-w-7xl mt-20 mx-auto px-4 lg:px-5 py-20">
+        <div className="flex justify-between items-center mb-10">
+          <div>
+            <p className="text-[#8d493a]"> Next Project</p>
+            <h2
+              className="text-3xl mt-5 md:text-4xl font-bold"
+              style={{ color: "rgb(141, 73, 58)" }}
+            >
+              On to the Next <br /> Masterpiece
+            </h2>
+          </div>
+          <Link
+            href="/projects"
+            className="text-sm mt-5 font-semibold uppercase tracking-wider hover:underline"
+            style={{ color: "rgb(141, 73, 58)" }}
+          >
+            View All Projects
+          </Link>
+        </div>
+
+        {nextProject && (
+          <div className="grid  grid-cols-1 lg:grid-cols-2 gap-8">
+            <Link href={`/projects/${nextProject.id}`} className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-xl">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src={nextProject.images[0]}
+                    alt={nextProject.heading}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3
+                    className="text-2xl font-bold mb-2"
+                    style={{ color: "rgb(141, 73, 58)" }}
+                  >
+                    {nextProject.heading}
+                  </h3>
+                  <p className="text-gray-600">{nextProject.subTitle}</p>
+                </div>
+              </div>
+            </Link>
+
+            <Link href={`/projects/${followingProject.id}`} className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-xl">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src={followingProject.images[0]}
+                    alt={nextProject.heading}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3
+                    className="text-2xl font-bold mb-2"
+                    style={{ color: "rgb(141, 73, 58)" }}
+                  >
+                    {followingProject.heading}
+                  </h3>
+                  <p className="text-gray-600">{followingProject.subTitle}</p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
