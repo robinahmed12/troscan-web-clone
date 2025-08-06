@@ -11,7 +11,7 @@ const page = () => {
         style={{ backgroundColor: "rgb(248, 237, 227)" }}
       >
         <Container>
-          <section className="py-8 lg:py-16">
+          <section>
             {/* Hero Section */}
             <div className="mt-8 lg:mt-14">
               <div className="text-center mb-8 lg:mb-16">
@@ -23,7 +23,7 @@ const page = () => {
                   <span className="block mt-2">Spaces with Style</span>
                 </h1>
 
-                <div className="w-full max-w-6xl mx-auto">
+                <div className="w-full mt-10 max-w-6xl mx-auto">
                   <Image
                     src="/about img/img-1.jpeg"
                     alt="About Troscan - Premium Furniture Design"
@@ -37,7 +37,7 @@ const page = () => {
             </div>
 
             {/* Our Approach Section */}
-            <div className="mt-16 lg:mt-32">
+            <div className="mt-40">
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                 {/* Content */}
                 <div className="order-2 lg:order-1 space-y-6">
@@ -97,7 +97,7 @@ const page = () => {
             </div>
 
             {/* Team Section */}
-            <div className="mt-20 lg:mt-40">
+            <div className="mt-40 lg:mt-40">
               <div className="text-center mb-12 lg:mb-20">
                 <h4
                   className="text-lg md:text-xl font-semibold tracking-wide uppercase mb-4"

@@ -25,13 +25,12 @@ export default function RootLayout({ children }) {
       >
         <header>
           <nav>
-            <Navbar/>
+            <Navbar />
           </nav>
         </header>
-       <main>
-         {children}
-       </main>
-       <footer></footer>
+
+        <main>{children}</main>
+        <footer></footer>
       </body>
     </html>
   );

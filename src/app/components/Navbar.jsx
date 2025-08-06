@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky  top-0 z-50 bg-[#F8EDE3] rounded-lg mx-4 mt-4">
+    <nav className="sticky   top-0 z-50 bg-white rounded-lg mx-4 mt-4">
       <div className="max-w-[700px] mx-auto px-5 py-1.5">
         <div className="flex justify-between items-center h-14">
           {/* Logo */}
@@ -25,16 +25,16 @@ const Navbar = () => {
               About
             </Link>
             <Link 
-              href="#projects" 
+              href={"/projects"}
               className="text-[#8D493A] hover:text-[#8D493A]/80 transition-colors duration-200 font-medium"
             >
               Projects
             </Link>
             <Link 
-              href="#contact" 
+              href={"/news"} 
               className="text-[#8D493A] hover:text-[#8D493A]/80 transition-colors duration-200 font-medium"
             >
-              Contact
+              News
             </Link>
             
             {/* Contact Button */}
@@ -42,7 +42,7 @@ const Navbar = () => {
               href="#contact" 
               className="bg-[#8D493A] text-white px-6 py-2 rounded-lg hover:bg-[#8D493A]/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
             >
-              Get In Touch
+              Contact
             </Link>
           </div>
 

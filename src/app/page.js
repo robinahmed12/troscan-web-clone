@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <Banner />
       <About />
-      <AnimateImgSection />
-      <Project />
+      {/* <AnimateImgSection /> */}
+      {/* <Project /> */}
     </>
   );
 }
