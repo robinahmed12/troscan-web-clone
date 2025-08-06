@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Navbar from "../Navbar";
 
 
 export default function Banner() {
@@ -15,12 +16,11 @@ export default function Banner() {
         fill
         style={{ objectFit: "cover" }}
         priority
-        className="  bg-no-repeat"
+        className=" z-10 bg-no-repeat"
       />
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-[rgba(141,73,58,0.2)] z-10"></div>
-
       {/* Hero Content */}
       <div className="relative pt-20 z-20 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
