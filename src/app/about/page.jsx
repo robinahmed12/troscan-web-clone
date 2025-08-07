@@ -7,7 +7,7 @@ const page = () => {
     <>
       {/* Custom background color using your palette */}
       <div
-        className="min-h-screen"
+        className="min-h-screen pt-10"
         style={{ backgroundColor: "rgb(248, 237, 227)" }}
       >
         <Container>

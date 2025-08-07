@@ -41,7 +41,7 @@ const Navbar = () => {
                 
                 {/* Contact Button */}
                 <Link 
-                  href="#contact" 
+                  href={"/contact"}
                   className="bg-[#8D493A] text-white px-6 py-2 rounded-lg hover:bg-[#8D493A]/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                 >
                   Contact
@@ -75,26 +75,33 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <div className={`md:hidden transition-all duration-300 ease-in-out ${
-            isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+            isOpen ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'
           } overflow-hidden`}>
             <div className="bg-[#F8EDE3]/70 backdrop-blur-sm border-t border-[#8D493A]/10 rounded-b-lg">
               <div className="px-8 py-4 space-y-3">
                 <Link 
-                  href="#about" 
+                  href={"/about"}
                   className="block text-[#8D493A] hover:text-[#8D493A]/80 transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   About
                 </Link>
                 <Link 
-                  href="#projects" 
+                  href={"/projects"}
                   className="block text-[#8D493A] hover:text-[#8D493A]/80 transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   Projects
                 </Link>
                 <Link 
-                  href="#contact" 
+                  href={"/news"}
+                  className="block text-[#8D493A] hover:text-[#8D493A]/80 transition-colors duration-200 font-medium py-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  News
+                </Link>
+                <Link 
+                  href={"/contact"}
                   className="block text-[#8D493A] hover:text-[#8D493A]/80 transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
@@ -103,7 +110,7 @@ const Navbar = () => {
                 
                 {/* Mobile Contact Button */}
                 <Link 
-                  href="#contact" 
+                  href={"/contact"}
                   className="block w-full text-center bg-[#8D493A] text-white px-6 py-3 rounded-lg hover:bg-[#8D493A]/90 transition-all duration-200 font-medium shadow-md mt-4"
                   onClick={() => setIsOpen(false)}
                 >

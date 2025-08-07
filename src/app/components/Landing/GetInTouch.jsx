@@ -28,7 +28,7 @@ const GetIn = () => {
           src="https://framerusercontent.com/images/Uv9jeirMiBGocQPSDko8jsMMolo.jpeg" // Make sure this image exists in your public folder
           alt="Sticky Project"
          
-          className="w-full"
+          className="w-full h-full"
           
         />
 

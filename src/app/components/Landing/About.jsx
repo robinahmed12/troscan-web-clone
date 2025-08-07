@@ -11,9 +11,9 @@ const About = () => {
       style={{ backgroundColor: "rgb(248, 237, 227)" }}
     >
       <Container>
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div className="flex flex-col  lg:flex-row items-center gap-12 lg:gap-16">
           {/* Content Section */}
-          <div className="flex-1 space-y-6">
+          <div className="flex-1 mt-20 space-y-6">
             <div className="space-y-4">
               <h4
                 className="text-sm font-semibold uppercase tracking-wider"
