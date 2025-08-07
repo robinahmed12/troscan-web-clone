@@ -78,7 +78,7 @@ const page = () => {
                       philosophy that true beauty lies in the subtle details
                       that make a space feel like home.
                     </p>
-                  </div>
+                  </div> 
                 </div>
 
                 {/* Image */}

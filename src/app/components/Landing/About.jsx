@@ -3,6 +3,7 @@
 import React from "react";
 import Container from "../ui/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -50,7 +51,7 @@ const About = () => {
             </div>
 
             <div className="pt-4">
-              <button
+              <Link href={"/about"}
                 className="px-8 py-4 font-semibold text-white rounded-lg transition-all duration-300 hover:opacity-90 hover:transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-opacity-50 shadow-lg"
                 style={{
                   backgroundColor: "rgb(141, 73, 58)",
@@ -58,7 +59,7 @@ const About = () => {
                 }}
               >
                 More About Us
-              </button>
+              </Link>
             </div>
           </div>
 

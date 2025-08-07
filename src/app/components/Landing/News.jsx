@@ -127,7 +127,7 @@ const News = () => {
 
         {/* Load More Section */}
         <div className="text-center mt-16">
-          <button 
+          <Link href={"/news"}
             className="px-8 py-4 rounded-full font-semibold text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-1 transform"
             style={{ 
               backgroundColor: 'rgb(141, 73, 58)',
@@ -135,7 +135,7 @@ const News = () => {
             }}
           >
             Load More Articles
-          </button>
+          </Link>
         </div>
 
         {/* Decorative Elements */}

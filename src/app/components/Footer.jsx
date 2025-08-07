@@ -12,10 +12,10 @@ const Footer = () => {
         <div>
           <h3 className="uppercase text-sm tracking-wide mb-3">Sitemap</h3>
           <ul className="space-y-2 text-lg">
-            <li><a href="#" className="hover:underline">About</a></li>
-            <li><a href="#" className="hover:underline">Projects</a></li>
-            <li><a href="#" className="hover:underline">News</a></li>
-            <li><a href="#" className="hover:underline">Contact</a></li>
+            <li><a href='/about' className="hover:underline">About</a></li>
+            <li><a href='projects' className="hover:underline">Projects</a></li>
+            <li><a href='news' className="hover:underline">News</a></li>
+            <li><a href='contact' className="hover:underline">Contact</a></li>
           </ul>
         </div>
 

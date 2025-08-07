@@ -100,13 +100,6 @@ const Navbar = () => {
                 >
                   News
                 </Link>
-                <Link 
-                  href={"/contact"}
-                  className="block text-[#8D493A] hover:text-[#8D493A]/80 transition-colors duration-200 font-medium py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Contact
-                </Link>
                 
                 {/* Mobile Contact Button */}
                 <Link 
@@ -114,7 +107,7 @@ const Navbar = () => {
                   className="block w-full text-center bg-[#8D493A] text-white px-6 py-3 rounded-lg hover:bg-[#8D493A]/90 transition-all duration-200 font-medium shadow-md mt-4"
                   onClick={() => setIsOpen(false)}
                 >
-                  Get In Touch
+                  Contact
                 </Link>
               </div>
             </div>
