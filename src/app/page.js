@@ -4,6 +4,8 @@ import About from "./components/Landing/About";
 import AnimateImgSection from "./components/Landing/AnimateImgSection";
 import Project from "./components/Landing/Project";
 import Expertise from "./components/Landing/Expertise";
+import GetIn from "./components/Landing/GetInTouch";
+import News from "./components/Landing/News";
 
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
       {/* <AnimateImgSection /> */}
       <Project />
       <Expertise/>
+      <GetIn/>
+      <News/>
     </>
   );
 }

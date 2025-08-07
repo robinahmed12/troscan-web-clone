@@ -1,11 +1,16 @@
 "use client";
 import Container from "@/app/components/ui/Container";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 const NewsDetails = ({ params }) => {
   const { id } = React.use(params);
   const [news, setNews] = useState([]);
+  const [allNews, setAllNews] = useState([]);
+  const [nextNews, setNextNews] = useState(null);
+  const [secondNews, setSecondNews] = useState(null);
+  const [thirdNews, setThirdNews] = useState(null);
   const [loading, setLoading] = useState(true);
 
   console.log(news);
@@ -15,8 +20,20 @@ const NewsDetails = ({ params }) => {
     fetch("/news.json")
       .then((res) => res.json())
       .then((data) => {
+        setAllNews(data);
         const matched = data.find((item) => item.id == id);
         setNews(matched || {});
+
+        // Find next news articles
+        const currentIndex = data.findIndex((item) => item.id == id);
+        const nextIndex = (currentIndex + 1) % data.length;
+        const secondIndex = (currentIndex + 2) % data.length;
+        const thirdIndex = (currentIndex + 3) % data.length;
+
+        setNextNews(data[nextIndex]);
+        setSecondNews(data[secondIndex]);
+        setThirdNews(data[thirdIndex]);
+
         setLoading(false);
       })
       .catch((err) => {
@@ -359,6 +376,137 @@ const NewsDetails = ({ params }) => {
             style={{ backgroundColor: "rgb(141, 73, 58)" }}
           ></div>
         </div>
+
+        {/* Next News Section - Add this before the closing Container div */}
+        {(nextNews || secondNews || thirdNews) && (
+          <div className="max-w-7xl mx-auto px-4 lg:px-5 py-20">
+            <div className="flex justify-between items-center mb-10">
+              <h2
+                className="text-3xl md:text-4xl font-bold"
+                style={{ color: "rgb(141, 73, 58)" }}
+              >
+                Continue Reading
+              </h2>
+              <Link
+                href="/news"
+                className="text-sm font-semibold uppercase tracking-wider hover:underline"
+                style={{ color: "rgb(141, 73, 58)" }}
+              >
+                View All News
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {nextNews && (
+                <Link href={`/news/${nextNews.id}`} className="group">
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-xl h-full flex flex-col">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img
+                        src={nextNews.image}
+                        alt={nextNews.heading}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-6 flex-grow">
+                      <div className="flex items-center mb-3">
+                        <span
+                          className="text-xs font-medium px-3 py-1 rounded-full"
+                          style={{
+                            backgroundColor: "rgba(141, 73, 58, 0.1)",
+                            color: "rgb(141, 73, 58)",
+                          }}
+                        >
+                          {nextNews.date}
+                        </span>
+                      </div>
+                      <h3
+                        className="text-xl font-bold mb-2"
+                        style={{ color: "rgb(141, 73, 58)" }}
+                      >
+                        {nextNews.heading}
+                      </h3>
+                      <p className="text-gray-600 line-clamp-3">
+                        {nextNews.subHeading}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              )}
+
+              {secondNews && (
+                <Link href={`/news/${secondNews.id}`} className="group">
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-xl h-full flex flex-col">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img
+                        src={secondNews.image}
+                        alt={secondNews.heading}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-6 flex-grow">
+                      <div className="flex items-center mb-3">
+                        <span
+                          className="text-xs font-medium px-3 py-1 rounded-full"
+                          style={{
+                            backgroundColor: "rgba(141, 73, 58, 0.1)",
+                            color: "rgb(141, 73, 58)",
+                          }}
+                        >
+                          {secondNews.date}
+                        </span>
+                      </div>
+                      <h3
+                        className="text-xl font-bold mb-2"
+                        style={{ color: "rgb(141, 73, 58)" }}
+                      >
+                        {secondNews.heading}
+                      </h3>
+                      <p className="text-gray-600 line-clamp-3">
+                        {secondNews.subHeading}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              )}
+
+              {thirdNews && (
+                <Link href={`/news/${thirdNews.id}`} className="group">
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-xl h-full flex flex-col">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img
+                        src={thirdNews.image}
+                        alt={thirdNews.heading}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-6 flex-grow">
+                      <div className="flex items-center mb-3">
+                        <span
+                          className="text-xs font-medium px-3 py-1 rounded-full"
+                          style={{
+                            backgroundColor: "rgba(141, 73, 58, 0.1)",
+                            color: "rgb(141, 73, 58)",
+                          }}
+                        >
+                          {thirdNews.date}
+                        </span>
+                      </div>
+                      <h3
+                        className="text-xl font-bold mb-2"
+                        style={{ color: "rgb(141, 73, 58)" }}
+                      >
+                        {thirdNews.heading}
+                      </h3>
+                      <p className="text-gray-600 line-clamp-3">
+                        {thirdNews.subHeading}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              )}
+            </div>
+          </div>
+        )}
       </Container>
     </div>
   );
