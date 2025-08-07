@@ -1,8 +1,14 @@
-import React from "react";
+"use client"
+
+import React, { useEffect } from "react";
 import Container from "../components/ui/Container";
 import Image from "next/image";
+import Expertise from "../components/Landing/Expertise";
 
 const page = () => {
+  useEffect(()=> {
+    document.title = "About"
+  })
   return (
     <>
       {/* Custom background color using your palette */}
@@ -13,7 +19,7 @@ const page = () => {
         <Container>
           <section className="pt-20">
             {/* Hero Section */}
-            <div className="mt-8 lg:mt-14">
+            <div data-aos="zoom-in-down" className="mt-8 lg:mt-14">
               <div className="text-center mb-8 lg:mb-16">
                 <h1
                   className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6"
@@ -23,7 +29,7 @@ const page = () => {
                   <span className="block mt-2">Spaces with Style</span>
                 </h1>
 
-                <div className="w-full mt-10 max-w-6xl mx-auto">
+                <div data-aos="fade-up" className="w-full  mt-10 max-w-6xl mx-auto">
                   <Image
                     src="/about img/img-1.jpeg"
                     alt="About Troscan - Premium Furniture Design"
@@ -37,10 +43,10 @@ const page = () => {
             </div>
 
             {/* Our Approach Section */}
-            <div className="mt-40">
+            <div  className="mt-40">
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                 {/* Content */}
-                <div className="order-2 lg:order-1 space-y-6">
+                <div data-aos="fade-right" className="order-2 lg:order-1 space-y-6">
                   <div className="space-y-4">
                     <h4
                       className="text-lg md:text-xl font-semibold tracking-wide uppercase"
@@ -76,7 +82,7 @@ const page = () => {
                 </div>
 
                 {/* Image */}
-                <div className="order-1 lg:order-2">
+                <div data-aos="fade-left" className="order-1 lg:order-2">
                   <div className="relative">
                     <Image
                       src="/about img/img-2.jpeg"
@@ -98,7 +104,7 @@ const page = () => {
 
             {/* Team Section */}
             <div className="mt-40 lg:mt-40">
-              <div className="text-center mb-12 lg:mb-20">
+              <div data-aos="zoom-in" className="text-center mb-12 lg:mb-20">
                 <h4
                   className="text-lg md:text-xl font-semibold tracking-wide uppercase mb-4"
                   style={{ color: "rgb(141, 73, 58)" }}
@@ -116,7 +122,7 @@ const page = () => {
 
               {/* Team Members Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                <div className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div data-aos="fade-up" className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative overflow-hidden">
                     <Image
                       src="/about img/ZkiObwy3gtgUC1r32SlsIZYE.jpeg"
@@ -155,7 +161,7 @@ const page = () => {
                   </div>
                 </div>
 
-                <div className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div data-aos="fade-up" className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative overflow-hidden">
                     <Image
                       src="/about img/iy4Yjrt6EfSEVReGjIS5qf5vc.jpeg"
@@ -194,7 +200,7 @@ const page = () => {
                   </div>
                 </div>
 
-                <div className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div data-aos="fade-right" className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative overflow-hidden">
                     <Image
                       src="/about img/or08AT1s7Gsd7r3cBxIPClE1qXo.jpeg"
@@ -233,7 +239,7 @@ const page = () => {
                   </div>
                 </div>
 
-                <div className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div data-aos="fade-up" className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative overflow-hidden">
                     <Image
                       src="/about img/qLpYxt2t3D25n4MxgyGnnbOX2o.jpeg"
@@ -272,7 +278,7 @@ const page = () => {
                   </div>
                 </div>
 
-                <div className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div data-aos="fade-up" className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative overflow-hidden">
                     <Image
                       src="/about img/VHjVat8amQI84VmcuqK0CulTk4.jpeg"
@@ -311,7 +317,7 @@ const page = () => {
                   </div>
                 </div>
 
-                <div className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div data-aos="fade-up" className="group bg-white rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative overflow-hidden">
                     <Image
                       src="/about img/6x4VB4KCen6shYoZmn4SlxHHg.jpeg"
@@ -350,6 +356,11 @@ const page = () => {
                   </div>
                 </div>
               </div>
+            </div>
+
+
+            <div>
+              <Expertise/>
             </div>
 
             {/* Call to Action Section */}

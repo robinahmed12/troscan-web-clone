@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import Navbar from "../Navbar";
+import Link from "next/link";
 
 export default function Banner() {
   return (
@@ -19,7 +20,7 @@ export default function Banner() {
       <div className="absolute inset-0 bg-amber-900/50 z-10"></div>
       
       {/* Hero Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8">
+      <div data-aos="fade-up" className="relative z-20 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
             <span className="block">Timeless Comfort</span>
@@ -33,14 +34,15 @@ export default function Banner() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <button className="group relative px-8 py-4 bg-[rgb(141,73,58)] text-white font-semibold rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <Link href={"/about"}
+             className="group relative px-8 py-4 bg-[rgb(141,73,58)] text-white font-semibold rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
               <span className="relative z-10">Our Vision</span>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 rounded-full transition-opacity duration-300"></div>
-            </button>
+            </Link>
 
-            <button className="group relative px-8 py-4 bg-transparent border-2 border-[rgb(248,237,227)] text-[rgb(248,237,227)] font-semibold rounded-full hover:bg-[rgb(248,237,227)] hover:text-[rgb(141,73,58)] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <Link href={"#expertise"} className="group relative px-8 py-4 bg-transparent border-2 border-[rgb(248,237,227)] text-[rgb(248,237,227)] font-semibold rounded-full hover:bg-[rgb(248,237,227)] hover:text-[rgb(141,73,58)] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
               <span className="relative z-10">Explore Our Expertise</span>
-            </button>
+            </Link>
           </div>
         </div>
 

@@ -19,9 +19,9 @@ const News = () => {
    <div 
     
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mt-20 mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-16">
+        <div data-aos="zoom-in-up" className="text-center mb-16">
           <div className="mb-6">
             <div 
               className="inline-block w-20 h-1 rounded-full mb-6"
@@ -44,7 +44,7 @@ const News = () => {
         </div>
 
         {/* News Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
+        <div data-aos="zoom-in-down" className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
           {news.slice(0 , 3).map((item, index) => (
             <Link 
             href={`/news/${item.id}`}

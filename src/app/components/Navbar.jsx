@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full top-0 z-50">
+    <nav data-aos="fade-down" className="fixed w-full top-0 z-50">
       <div className="flex justify-center w-full mt-4"> {/* Centering container */}
         <div className="bg-white rounded-lg mx-4 max-w-[700px] w-full"> {/* White background with max-width */}
           <div className="px-5 py-1.5">

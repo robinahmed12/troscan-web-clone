@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import Container from "../ui/Container";
 
 const TroscanGallery = () => {
   const containerRef = useRef(null);
@@ -47,7 +48,8 @@ const TroscanGallery = () => {
     { x: 350, y: 250 }     // bottom-right (angle)
   ];
   return (
-    <div className="relative min-h-screen h-[200vh] bg-[#f8ede3]" ref={containerRef}>
+    <Container>
+        <div className="relative min-h-screen h-[600vh] bg-[#f8ede3]" ref={containerRef}>
       {/* Sticky container */}
       <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
         
@@ -63,13 +65,13 @@ const TroscanGallery = () => {
               opacity: 1 // Always visible
             }}
           >
-            <div className="w-[120px] h-[180px] md:w-[180px] md:h-[240px] relative shadow-xl border-4 border-white">
+            <div className="w-[150px] h-[180px] md:w-[180px] md:h-[240px] relative shadow-xl border-4 border-white">
               <Image
                 src={path}
                 alt={`Design ${i+1}`}
                 fill
-                className="object-cover"
-                sizes="(max-width: 768px) 120px, 180px"
+                className="w-full h-full"
+                sizes="(max-width: 900px) 120px, 180px"
               />
             </div>
           </motion.div>
@@ -93,6 +95,7 @@ const TroscanGallery = () => {
         </motion.div>
       </div>
     </div>
+    </Container>
   );
 };
 

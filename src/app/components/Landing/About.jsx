@@ -13,7 +13,7 @@ const About = () => {
       <Container>
         <div className="flex flex-col  lg:flex-row items-center gap-12 lg:gap-16">
           {/* Content Section */}
-          <div className="flex-1 mt-20 space-y-6">
+          <div data-aos="fade-up" className="flex-1 mt-20 space-y-6">
             <div className="space-y-4">
               <h4
                 className="text-sm font-semibold uppercase tracking-wider"
@@ -70,7 +70,8 @@ const About = () => {
                 style={{ backgroundColor: "rgb(141, 73, 58)" }}
               ></div>
 
-              <Image
+              <div data-aos="fade-down">
+                <Image
                 src="/about image.jpeg"
                 alt="About Troscan - Premium Furniture Design"
                 width={600}
@@ -78,6 +79,7 @@ const About = () => {
                 className="relative w-full h-auto rounded-2xl object-cover shadow-2xl transition-transform duration-300 group-hover:scale-105"
                 priority
               />
+              </div>
             </div>
           </div>
         </div>

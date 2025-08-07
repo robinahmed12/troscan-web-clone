@@ -10,6 +10,8 @@ const News = () => {
     fetch("news.json")
       .then((res) => res.json())
       .then((data) => setNews(data));
+
+      document.title = "News"
   }, []);
 
   return (
@@ -17,7 +19,7 @@ const News = () => {
       className="min-h-screen mt-20 py-16 px-4 sm:px-6 lg:px-8"
       style={{ backgroundColor: 'rgb(248, 237, 227)' }}
     >
-      <div className="max-w-7xl mx-auto">
+      <div data-aos="zoom-in" className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
           <div className="mb-6">
@@ -42,7 +44,7 @@ const News = () => {
         </div>
 
         {/* News Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
+        <div data-aos="zoom-up" className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
           {news.map((item, index) => (
             <Link 
             href={`/news/${item.id}`}

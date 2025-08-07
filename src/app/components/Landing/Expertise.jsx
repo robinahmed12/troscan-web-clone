@@ -35,13 +35,13 @@ const Expertise = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div 
+    <div  id="expertise"
       className="min-h-screen py-16 lg:py-20"
       style={{ backgroundColor: 'rgb(248, 237, 227)' }}
     >
       <Container>
         {/* Header Section */}
-        <div className="text-center mb-16 lg:mb-20">
+        <div data-aos="zoom-in" className="text-center mb-16 lg:mb-20">
           <div className="mb-8">
             {/* Decorative accent */}
             <div 
@@ -91,7 +91,7 @@ const Expertise = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start max-w-7xl mx-auto">
+        <div data-aos="zoom-in-up" className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start max-w-7xl mx-auto">
           {/* Image Section */}
           <motion.div 
             initial={{ opacity: 0, x: -50 }}

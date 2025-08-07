@@ -40,6 +40,7 @@ const NewsDetails = ({ params }) => {
         console.error("Failed to load data:", err);
         setLoading(false);
       });
+      document.title = "News Details"
   }, [id]);
 
   if (loading) {
@@ -73,7 +74,7 @@ const NewsDetails = ({ params }) => {
       style={{ backgroundColor: "rgb(248, 237, 227)" }}
     >
       <Container>
-        <div className="py-8 md:py-12 lg:py-20 px-4 sm:px-6 lg:px-8">
+        <div  className="py-8 md:py-12 lg:py-20 px-4 sm:px-6 lg:px-8">
           {/* Back Navigation */}
           <div className="max-w-7xl mx-auto mb-8">
             <button
@@ -99,7 +100,7 @@ const NewsDetails = ({ params }) => {
           </div>
 
           {/* Hero Section */}
-          <div className="max-w-7xl mx-auto">
+          <div  data-aos="fade-up" className="max-w-7xl mx-auto">
             {/* Header Section - Responsive Layout */}
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-16 mb-16 lg:mb-24">
               {/* Image Container */}
@@ -214,7 +215,7 @@ const NewsDetails = ({ params }) => {
             </div>
 
             {/* Article Content Section */}
-            <div className="flex justify-center">
+            <div data-aos="fade-down" className="flex justify-center">
               <div className="w-full max-w-5xl">
                 <div className="bg-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden group border border-white/50">
                   {/* Content Header */}

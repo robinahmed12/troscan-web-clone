@@ -14,7 +14,6 @@ const ProjectDetails = ({ params }) => {
   const [followingProject, setFollowingProject] = useState(null);
 
   React.useEffect(() => {
-    // Load all projects
     fetch("/project.json")
       .then((res) => res.json())
       .then((data) => {
@@ -30,6 +29,7 @@ const ProjectDetails = ({ params }) => {
         setNextProject(data[nextIndex]);
       })
       .catch((err) => console.error("Failed to load data:", err));
+      document.title = "Project Details"
   }, [id]);
 
   const { features, feature, feat, feat2, feat3 } = project;
@@ -50,8 +50,8 @@ const ProjectDetails = ({ params }) => {
         {/* Enhanced Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60">
           <div className="relative h-full max-w-7xl mx-auto">
-            <div className="absolute bottom-9 inset-x-0 flex flex-col lg:flex-row justify-between items-start lg:items-end px-4 md:px-6 gap-4 lg:gap-6">
-              <h1 className="text-white w-full lg:w-[400px] text-3xl md:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-lg">
+            <div  className="absolute bottom-9 inset-x-0 flex flex-col lg:flex-row justify-between items-start lg:items-end px-4 md:px-6 gap-4 lg:gap-6">
+              <h1 data-aos="fade-up" className="text-white w-full lg:w-[400px] text-3xl md:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-lg">
                 {project.heading}
               </h1>
               <p className="text-white/95 text-base md:text-lg lg:text-xl font-medium leading-relaxed drop-shadow-md">
@@ -192,9 +192,10 @@ const ProjectDetails = ({ params }) => {
         </div>
       </div>
 
-      <div className="max-w-7xl mt-20 mx-auto px-4 lg:px-5 py-20">
+      <div data-aos="fade-up"
+     className="max-w-7xl mt-20 mx-auto px-4 lg:px-5 py-20">
         <div className="flex justify-between items-center mb-10">
-          <div>
+          <div >
             <p className="text-[#8d493a]"> Next Project</p>
             <h2
               className="text-3xl mt-5 md:text-4xl font-bold"

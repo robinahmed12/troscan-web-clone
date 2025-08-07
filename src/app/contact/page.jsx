@@ -1,7 +1,12 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import Container from "../components/ui/Container";
 
 const Contact = () => {
+
+    useEffect(()=> {
+        document.title = "Contact"
+    })
   return (
     <div 
       className="min-h-screen py-16 px-4"
@@ -10,7 +15,7 @@ const Contact = () => {
       <Container>
         <div className="pt-20 pb-8">
           {/* Header Section */}
-          <div className="text-center mb-16 lg:mb-20">
+          <div data-aos="fade-up" className="text-center mb-16 lg:mb-20">
             <div className="mb-8">
               <div 
                 className="w-24 h-1 mx-auto rounded-full mb-6"
@@ -33,7 +38,7 @@ const Contact = () => {
           </div>
 
           {/* Main Content Container */}
-          <div className="max-w-7xl mx-auto">
+          <div data-aos="fade-down" className="max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-stretch">
               
               {/* Image Section */}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#884F3D] mt-14 text-[#f8ede3] px-6 py-16">
+    <footer data-aos="zoom-in-up" className="bg-[#884F3D] mt-14 text-[#f8ede3] px-6 py-16">
       <div className="text-center mb-10">
         <h2 className="text-xl font-semibold tracking-wide">Troscán</h2>
       </div>

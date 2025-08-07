@@ -32,6 +32,7 @@ const Project = () => {
 
   return (
     <div
+      data-aos="zoom-in-up"
       className="relative mt-40 h-[550vh] "
       ref={containerRef}
       style={{ backgroundColor: "rgb(248, 237, 227)" }}
@@ -46,7 +47,6 @@ const Project = () => {
                 src={project[0].images[0]}
                 alt="Base image"
                 className="w-full h-full"
-               
               />
 
               {/* Professional overlay with your colors */}

@@ -13,13 +13,15 @@ const Projects = () => {
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .catch((err) => console.error("Failed to load data:", err));
+      document.title = "Projects"
   }, []);
 
   return (
     <div className="min-h-screen mt-20" style={{ backgroundColor: 'rgb(248, 237, 227)' }}>
       <Container className="pt-20 pb-16">
         {/* Header Section */}
-        <div className="text-center mb-16">
+        <div data-aos="fade-up"
+     data-aos-duration="3000" className="text-center mb-16">
           <h1 
             className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
             style={{ color: 'rgb(141, 73, 58)' }}
@@ -43,7 +45,8 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+        <div data-aos="fade-down"
+     data-aos-duration="3000" className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
           {projects.map((project, index) => (
             <Link href={`/projects/${project.id}`}
               key={project.id}
