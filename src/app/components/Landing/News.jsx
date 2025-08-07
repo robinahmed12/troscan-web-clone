@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Container from "../ui/Container";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -16,7 +17,8 @@ const News = () => {
   }, []);
 
   return (
-   <div 
+   <Container>
+    <div 
     
     >
       <div className="max-w-7xl mt-20 mx-auto">
@@ -147,6 +149,7 @@ const News = () => {
         ></div>
       </div>
     </div>
+   </Container>
   );
 };
 
