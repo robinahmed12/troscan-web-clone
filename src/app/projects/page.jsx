@@ -16,7 +16,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'rgb(248, 237, 227)' }}>
+    <div className="min-h-screen mt-20" style={{ backgroundColor: 'rgb(248, 237, 227)' }}>
       <Container className="pt-20 pb-16">
         {/* Header Section */}
         <div className="text-center mb-16">

@@ -45,10 +45,10 @@ const NewsDetails = ({ params }) => {
   if (loading) {
     return (
       <div
-        className="min-h-screen flex items-center justify-center"
+        className="min-h-screen  flex items-center justify-center"
         style={{ backgroundColor: "rgb(248, 237, 227)" }}
       >
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col  items-center space-y-4">
           <div
             className="animate-spin rounded-full h-16 w-16 border-4 border-t-transparent"
             style={{
@@ -69,7 +69,7 @@ const NewsDetails = ({ params }) => {
 
   return (
     <div
-      className="min-h-screen"
+      className="min-h-screen mt-20"
       style={{ backgroundColor: "rgb(248, 237, 227)" }}
     >
       <Container>

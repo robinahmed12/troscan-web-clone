@@ -16,7 +16,7 @@ export default function Banner() {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-[rgba(141,73,58,0.2)] z-10"></div>
+      <div className="absolute inset-0 bg-amber-900/50 z-10"></div>
       
       {/* Hero Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8">

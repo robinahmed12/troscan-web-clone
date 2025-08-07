@@ -14,7 +14,7 @@ const News = () => {
 
   return (
     <div 
-      className="min-h-screen py-16 px-4 sm:px-6 lg:px-8"
+      className="min-h-screen mt-20 py-16 px-4 sm:px-6 lg:px-8"
       style={{ backgroundColor: 'rgb(248, 237, 227)' }}
     >
       <div className="max-w-7xl mx-auto">

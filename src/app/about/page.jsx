@@ -11,7 +11,7 @@ const page = () => {
         style={{ backgroundColor: "rgb(248, 237, 227)" }}
       >
         <Container>
-          <section>
+          <section className="pt-20">
             {/* Hero Section */}
             <div className="mt-8 lg:mt-14">
               <div className="text-center mb-8 lg:mb-16">

@@ -32,7 +32,7 @@ const Project = () => {
 
   return (
     <div
-      className="relative h-[550vh] "
+      className="relative mt-40 h-[550vh] "
       ref={containerRef}
       style={{ backgroundColor: "rgb(248, 237, 227)" }}
     >
