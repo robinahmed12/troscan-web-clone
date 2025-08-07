@@ -3,6 +3,7 @@ import Banner from "./components/Landing/Banner";
 import About from "./components/Landing/About";
 import AnimateImgSection from "./components/Landing/AnimateImgSection";
 import Project from "./components/Landing/Project";
+import Expertise from "./components/Landing/Expertise";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       {/* <AnimateImgSection /> */}
       <Project />
+      <Expertise/>
     </>
   );
 }
