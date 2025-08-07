@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Troscán — Room Décor & Design Website
+
+Welcome to **Troscán**, a modern and elegant room décor and interior design website showcasing curated furniture collections, design expertise, and latest news. Built with a focus on user experience, responsiveness, and smooth animations.
+
+---
+
+## Overview
+
+Troscán combines tradition and modernity in home décor, offering users inspiration through beautifully designed projects, expert insights, and curated furniture collections. The website features a seamless browsing experience with dynamic project details, an engaging news section, and smooth animated interactions.
+
+---
+
+## Live Demo
+
+Check out the live version of Troscán here:  
+[https://your-vercel-url.vercel.app]([https://your-vercel-url.vercel.app](https://troscan-web-clone.vercel.app/))
+
+---
+
+## Features
+
+- **Landing Page** with hero banner, about section, and design showcase  
+- **Projects** showcasing room décor collections with detailed features and imagery  
+- **Expertise** section highlighting unique design philosophies  
+- **News** feed for latest articles and updates  
+- **Contact** page for inquiries and consultations  
+- Responsive design optimized for mobile, tablet, and desktop  
+- Scroll animations powered by **AOS (Animate On Scroll)**  
+- Smooth motion effects using **Framer Motion**  
+- Optimized images served with Next.js `<Image>` component  
+- SEO-friendly metadata and semantic HTML structure
+
+---
+
+## Tech Stack
+
+- **Next.js** — React framework for server-side rendering and static generation  
+- **Tailwind CSS** — Utility-first CSS framework for rapid UI development  
+- **Framer Motion** — Animation library for React, used for smooth transitions and motion effects  
+- **AOS (Animate On Scroll)** — Scroll-triggered animations for engaging user experience  
+- **Vercel** — Deployment platform for seamless CI/CD and hosting  
+
+---
+
+## Project Structure & Routes
+
+- `/` — Home/Landing page combining multiple sections (Banner, About, Projects, Expertise, News)  
+- `/projects` — List and detail pages for curated room décor projects  
+- `/news` — News feed showcasing latest articles and updates  
+- `/contact` — Contact form for user inquiries and consultations  
+
+---
+
+
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
 ```bash
+[git clone https://github.com/yourusername/troscan.git](https://github.com/robinahmed12/troscan-web-clone.git)
+cd troscan-web-clone
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 to view the project locally.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Deployment
+Deployed on Vercel for blazing-fast performance and easy updates:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+bash
+Copy
+Edit
+npm i -g vercel
+vercel login
+vercel
+Follow prompts to deploy your site live.
