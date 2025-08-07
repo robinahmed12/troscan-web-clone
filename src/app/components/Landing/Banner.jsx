@@ -1,14 +1,10 @@
-"use client";
-
+'use client';
 import Image from "next/image";
-import { useState } from "react";
 import Navbar from "../Navbar";
 
-
 export default function Banner() {
-
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen pt-20"> {/* Adjusted pt-20 to account for navbar height */}
       {/* Background Image */}
       <Image
         src="/banner.jpeg"
@@ -16,13 +12,14 @@ export default function Banner() {
         fill
         style={{ objectFit: "cover" }}
         priority
-        className=" z-10 bg-no-repeat"
+        className="z-10 bg-no-repeat"
       />
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-[rgba(141,73,58,0.2)] z-10"></div>
+      
       {/* Hero Content */}
-      <div className="relative pt-20 z-20 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
             <span className="block">Timeless Comfort</span>
